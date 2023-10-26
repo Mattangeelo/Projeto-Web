@@ -52,9 +52,19 @@
                     <?php echo $usuario->atualizado_em->humanize(); ?>
                 </p>
                 <div class="mt-4">
-                    <a href= "<?php echo site_url("admin/usuarios/editar/$usuario->id"); ?>"class="btn btn-dark btn-sm btn-icon-text mr-2"><i class="mdi mdi-file-check btn-icon-prepend"></i>Editar</a>
-                    <a href= "<?php echo site_url("admin/usuarios/excluir/$usuario->id"); ?>"class="btn btn-danger btn-sm mr-2"><i class="mdi mdi-delete btn-icon-prepend"></i>Excluir</a>
-                    <a href= "<?php echo site_url("admin/usuarios"); ?>"class="btn btn-light text-dark btn-sm"><i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>Voltar</a>
+                    <a href= "<?php echo site_url("admin/usuarios/editar/$usuario->id"); ?>"class="btn btn-dark btn-sm btn-icon-text mr-2 btn-sm">
+                        <i class="mdi mdi-file-check btn-icon-prepend"></i>
+                        Editar
+                    </a>
+                    <a href= "<?php echo site_url("admin/usuarios/excluir/$usuario->id"); ?>"class="btn btn-danger btn-sm mr-2 btn-sm">
+                        <i class="mdi mdi-delete btn-icon-prepend"></i>
+                        Excluir
+                    </a>
+                    <a href= "<?php echo site_url("admin/usuarios"); ?>"class="btn btn-light text-dark btn-sm">
+                        <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
+                        Voltar
+                    </a>
+
                 </div>
 
             </div>

@@ -27,11 +27,12 @@
 
             <div class="card-body">
                 
-            <form class="forms-sample">
+            <?php echo form_open("admin/usuarios/atualizar/$usuario->id");?>
 
+                
                 <?php echo $this->include('Admin/Usuarios/form'); ?>
                    
-            </form>
+            <?php echo form_close();?>
 
             </div>
         </div>
@@ -47,5 +48,7 @@
 
 <?php echo $this->section('scripts'); ?>
 
+<script src="<?php echo site_url('admin/vendors/mask/jquery.mask.min.js');?>"></script>
+<script src="<?php echo site_url('admin/vendors/mask/app.js');?>"></script>
 
 <?php echo $this->endSection(); ?>
