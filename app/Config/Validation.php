@@ -25,6 +25,7 @@ class Validation extends BaseConfig
         FormatRules::class,
         FileRules::class,
         CreditCardRules::class,
+        \App\Validacoes\MinhasValidacoes::class, //Carregando Validação de CPF personalizada
     ];
 
     /**

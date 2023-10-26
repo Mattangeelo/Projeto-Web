@@ -19,7 +19,7 @@
 
 <?php echo $this->section('conteudo'); ?>
 <div class="row">
-    <div class="col-lg-12 grid-margin stretch-card">
+    <div class="col-lg-6 grid-margin stretch-card">
         <div class="card">
             <div class="card-header bg-primary pb-0 pt-4">
                 <h4 class="card-title text-white"><?php echo esc($titulo); ?></h4>
@@ -37,10 +37,17 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/usuarios/atualizar/$usuario->id");?>
+            <?php echo form_open("admin/usuarios/excluir/$usuario->id");?>
 
-                
-                <?php echo $this->include('Admin/Usuarios/form'); ?>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Atenção!</strong> Tem certeza da exclusão do usuario <strong><?php echo esc ($usuario->nome)?>?</strong>
+            </div>
+
+            <button type="submit" class="btn btn-danger mr-2 btn-sm">
+                <i class="mdi mdi-delete btn-icon-prepend"></i>
+                 Excluir
+            </button>
+
                 <a href= "<?php echo site_url("admin/usuarios/show/$usuario->id"); ?>"class="btn btn-light text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar

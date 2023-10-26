@@ -4,6 +4,8 @@ namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
 
+use App\Entities\Usuario;
+
 class Usuarios extends BaseController
 {
     private $usuarioModel;
@@ -16,7 +18,7 @@ class Usuarios extends BaseController
 
         $data =[
             'titulo' => 'Listando os usuarios',
-            'usuarios' => $this->usuarioModel->findAll()
+            'usuarios' => $this->usuarioModel->withDeleted(true)->findAll()
 
         ];
 
@@ -45,6 +47,46 @@ class Usuarios extends BaseController
         
     }
 
+    public function criar(){
+
+        $usuario= new Usuario();
+       
+        $data= [
+
+            'titulo' => "Criando novo Usuario",
+            'usuario' => $usuario,
+        ];
+        return view('Admin/Usuarios/criar',$data);
+    }
+
+
+    public function cadastrar (){
+
+        if($this->request->getMethod() === 'post'){
+
+            $usuario = new Usuario($this->request->getPost());
+
+
+            if($this->usuarioModel->protect(false)->save($usuario)){
+
+                return redirect()->to(site_url("admin/usuarios/show/".$this->usuarioModel->getInsertID()))
+                    ->with('sucesso',"Usuario $usuario->nome cadastrado com Sucesso.");
+            }else{
+
+                return redirect()->back()
+                    ->with('errors_model', $this->usuarioModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+            }
+
+        }else{
+            /* Não e post */
+            return redirect()->back();
+        }
+
+    }
+
+
     public function show($id=null){
 
         $usuario = $this->buscaUsuarioOu404($id);
@@ -68,6 +110,66 @@ class Usuarios extends BaseController
             'usuario' => $usuario,
         ];
         return view('Admin/Usuarios/editar',$data);
+    }
+
+
+    public function atualizar ($id = null){
+
+        if($this->request->getMethod() === 'post'){
+
+            $usuario=$this->buscaUsuarioOu404($id);
+
+            $post= $this->request->getPost();
+            
+            if(empty($post['password'])){
+
+                $this->usuarioModel->desabilitaValidacaoSenha();
+                unset($post['password']);
+                unset($post['password_confirmation']);
+            }
+
+            $usuario->fill($post);
+
+            if(!$usuario->hasChanged()){
+
+                return redirect()->back()->with('info','Não há dados para atualizar');
+            }
+
+            if($this->usuarioModel->protect(false)->save($usuario)){
+
+                return redirect()->to(site_url("admin/usuarios/show/$usuario->id"))
+                    ->with('sucesso',"Usuario $usuario->nome atualizado com Sucesso.");
+            }else{
+
+                return redirect()->back()
+                    ->with('errors_model', $this->usuarioModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+            }
+
+        }else{
+            /* Não e post */
+            return redirect()->back();
+        }
+
+    }
+
+    public function excluir($id=null){
+
+        $usuario = $this->buscaUsuarioOu404($id);
+
+        if($this->request->getMethod() === 'post'){
+
+            $this->usuarioModel->delete($id);
+            return redirect()->to(site_url('admin/usuarios'))->with('sucesso',"Usuario $usuario->nome excluido com Sucesso!");
+        }
+       
+        $data= [
+
+            'titulo' => "Excluindo o usuario $usuario->nome",
+            'usuario' => $usuario,
+        ];
+        return view('Admin/Usuarios/excluir',$data);
     }
 
 
