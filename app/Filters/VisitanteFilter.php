@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class LoginFilter implements FilterInterface
+class VisitanteFilter implements FilterInterface
 {
     /**
      * Do whatever processing this filter needs to do.
@@ -25,11 +25,17 @@ class LoginFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        
-        if(!service('autenticacao')->estaLogado()){
-            return redirect()->to(\site_url('login'))->with('info','Por favor realize o login.');
-        }
+        $autenticacao = service('autenticacao');
 
+        if($autenticacao->estaLogado()){
+
+            $usuario = $autenticacao->pegaUsuarioLogado();
+
+            if($usuario->is_admin){
+                return redirect()->to(site_url('admin/home'));
+            }
+            return redirect()->to(site_url('/'));
+        }
     }
 
     /**
