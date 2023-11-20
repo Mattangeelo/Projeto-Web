@@ -92,6 +92,8 @@ class Autenticacao{
 
     private function logaUsuario(object $usuario){
 
+        //Matheus
+
         $session = session();
         $session->regenerate();
         $session->set('usuario_id',$usuario->id);
