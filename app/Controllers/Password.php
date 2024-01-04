@@ -36,11 +36,30 @@ class Password extends BaseController
 
             $usuario->iniciaPasswordReset();
 
-            dd($usuario);
+            $this->enviaEmailRedefinicaoSenha($usuario);
+            
+            return redirect()->to;
+
 
         }else{
             /* Não e Post */
             return redirect()->back();
         }
+    }
+
+    private function enviaEmailRedefinicaoSenha (object $usuario){
+
+        $email = service('email');
+
+        $email->setFrom('no-replay@itaipu.com.br', 'Itaipu Engenharia');
+        $email->setTo($usuario->email);
+
+
+        $email->setSubject('Redefinição de Senha');
+
+        $mensagem= view('Password/reset_email',['token' => $usuario->reset_token]);
+        $email->setMessage('Testing the email class.');
+
+        $email->send();
     }
 }
