@@ -39,6 +39,11 @@
   <script src="<?php echo site_url('admin/');?>js/hoverable-collapse.js"></script>
   <script src="<?php echo site_url('admin/');?>js/template.js"></script>
   <!-- endinject -->
+
+  <!--Renderização -->
+  <?php echo $this->renderSection('scripts') ?>
+
+  
 </body>
 
 </html>
