@@ -28,11 +28,11 @@
                 <h4 class="card-title"><?php echo $titulo; ?></h4>
                 
                 <div class="ui-widget">
-                    <input id="query" name="query" placeholder="Pesquise por uma Categoria" class="form-control bg-light mb-5">
+                    <input id="query" name="query" placeholder="Pesquise por um extra" class="form-control bg-light mb-5">
                 </div>
 
 
-                <a href= "<?php echo site_url("admin/categorias/criar"); ?>"class="btn btn-outline-success btn-fw float-right mb-5">
+                <a href= "<?php echo site_url("admin/extras/criar"); ?>"class="btn btn-outline-success btn-fw float-right mb-5">
                     <i class="mdi mdi-plus btn-icon-prepend"></i>
                      Cadastrar
                 </a>
@@ -44,29 +44,31 @@
                             <tr>
                                 <th>Nome</th>
                                 <th>Data de criação</th>
+                                <th>Preco</th>
                                 <th>Ativo</th>
                                 <th>Situação</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($categorias as $categoria): ?>
+                            <?php foreach($extras as $extra): ?>
                             <tr>
                                 
                                 <td>
-                                    <a href="<?php echo site_url("admin/categorias/show/$categoria->id"); ?>"><?php echo $categoria->nome; ?></a>
+                                    <a href="<?php echo site_url("admin/extras/show/$extra->id"); ?>"><?php echo $extra->nome; ?></a>
                                 </td>
-                                <td><?php echo $categoria->criado_em->humanize(); ?></td>
+                                <td><?php echo $extra->criado_em->humanize(); ?></td>
+                                <td>R$&nbsp;<?php echo esc(number_format($extra->preco, 2)); ?></td>
 
 
 
-                                <td><?php echo ($categoria->ativo && $categoria->deletado_em == null ? '<label class="badge badge-primary">Sim</label>' : '<label class="badge badge-danger">Não</label>'); ?></td>
+                                <td><?php echo ($extra->ativo && $extra->deletado_em == null ? '<label class="badge badge-primary">Sim</label>' : '<label class="badge badge-danger">Não</label>'); ?></td>
                                 <td>
 
-                                    <?php echo ($categoria->deletado_em == null  ? '<label class="badge badge-primary">Disponivel</label>' : '<label class="badge badge-danger">Excluido</label>'); ?>
+                                    <?php echo ($extra->deletado_em == null  ? '<label class="badge badge-primary">Disponivel</label>' : '<label class="badge badge-danger">Excluido</label>'); ?>
 
-                                    <?php if($categoria->deletado_em != null): ?>
+                                    <?php if($extra->deletado_em != null): ?>
 
-                                        <a href= "<?php echo site_url("admin/categorias/desfazerExclusao/$categoria->id"); ?>"class="badge badge-dark ml-2">
+                                        <a href= "<?php echo site_url("admin/extras/desfazerExclusao/$extra->id"); ?>"class="badge badge-dark ml-2">
                                             <i class="mdi mdi-undo btn-icon-prepend"></i>
                                                 Desfazer
                                         </a>
@@ -109,7 +111,7 @@ $(function(){
       source: function(request,response){
         $.ajax({
 
-            url: "<?php echo site_url('admin/categorias/procurar');?>",
+            url: "<?php echo site_url('admin/extras/procurar');?>",
             dataType: "json",
             data:{
                 term:request.term
@@ -120,7 +122,7 @@ $(function(){
 
                     var data = [
                         {
-                            label: 'Categoria não encontrado',
+                            label: 'extra não encontrado',
                             value: -1
                         }
                     ];
@@ -138,7 +140,7 @@ $(function(){
 
         } else {
 
-            window.location.href = '<?php echo site_url('admin/categorias/show/');?>' + ui.item.id;
+            window.location.href = '<?php echo site_url('admin/extras/show/');?>' + ui.item.id;
         }
       }
     });//fim autocomplete

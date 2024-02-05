@@ -4,12 +4,14 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class CategoriaModel extends Model
+class ExtraModel extends Model
 {
-    protected $table            = 'categorias';
-    protected $returnType       = 'App\Entities\Categoria';
-    protected $useSoftDeletes   = true;
-    protected $allowedFields    = ['nome','ativo','slug'];
+    protected $table            = 'extras';
+    protected $primaryKey       = 'id';
+    protected $useAutoIncrement = true;
+    protected $returnType       = 'App\Entities\Extra';
+    protected $useSoftDeletes   = false;
+    protected $allowedFields    = ['nome','slug','ativo','preco','descricao'];
 
     // Dates
     protected $useTimestamps = true;
@@ -20,12 +22,12 @@ class CategoriaModel extends Model
 
     // Validation
     protected $validationRules = [
-        'nome'     => 'required|max_length[120]|min_length[2]|is_unique[categorias.nome]',
+        'nome'     => 'required|max_length[120]|min_length[2]|is_unique[extras.nome]',
     ];
     protected $validationMessages = [
         'nome' => [
             'required' => 'O campo Nome é Obrigatório.',
-            'is_unique' => 'Essa categoria já Existe.',
+            'is_unique' => 'Esse extra já Existe.',
         ],
     ];
     //Eventos Callback
@@ -42,7 +44,7 @@ class CategoriaModel extends Model
 
         return $data;
     }
-
+    
     public function procurar($term) {
         if($term === null){
             return [];
@@ -60,4 +62,5 @@ class CategoriaModel extends Model
                                     ->set('deletado_em',null)
                                     ->update();
     }
+
 }
