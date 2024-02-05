@@ -37,6 +37,32 @@ class Extras extends BaseController
         return view('Admin/extras/criar',$data);
     }
 
+    public function cadastrar (){
+
+        if($this->request->getPost()){
+
+            $extra = new extra($this->request->getPost());
+
+
+            if($this->extraModel->save($extra)){
+
+                return redirect()->to(site_url("admin/extras/show/".$this->extraModel->getInsertID()))
+                    ->with('sucesso',"extra $extra->nome cadastrado com Sucesso.");
+            }else{
+
+                return redirect()->back()
+                    ->with('errors_model', $this->extraModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+            }
+
+        }else{
+            /* Não e post */
+            return redirect()->back();
+        }
+
+    }
+
     public function editar($id=null){
 
         $extra = $this->buscaExtraOu404($id);
@@ -115,6 +141,47 @@ class Extras extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Não encontramos o extra $id");
         }
         return $extra;
+    }
+
+    public function excluir($id=null){
+
+        $extra = $this->buscaExtraOu404($id);
+
+        if($extra->deletado_em != null){
+            return redirect()->back()->with('info',"A extra $extra->nome encontra-se ja excluído.");
+        }
+
+        if ($this->request->getMethod() === 'post') {
+
+            $this->extraModel->delete($id);
+            return redirect()->to(site_url('admin/extras'))->with('sucesso',"A extra $extra->nome excluido com Sucesso!");
+        }
+       
+        $data= [
+
+            'titulo' => "Excluindo o extra $extra->nome",
+            'extra' => $extra,
+        ];
+        return view('Admin/Extras/excluir',$data);
+    }
+
+    public function desfazerexclusao($id=null){
+
+        $extra = $this->buscaExtraOu404($id);
+        
+        if($extra->deletado_em == null){
+            return redirect()->back()->with('info','Apenas extras excluidas podem ser recuperada.');
+        }
+
+        if($this->extraModel->desfazerExclusao($id)){
+            return redirect()->back()->with('sucesso','Exclusão desfeita com Sucesso!');
+        }else{
+            return redirect()->back()
+                    ->with('errors_model', $this->extraModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+        }
+
     }
 
     public function show($id=null){

@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ExtraModel extends Model
+class MedidaModel extends Model
 {
-    protected $table            = 'extras';
-    protected $returnType       = 'App\Entities\Extra';
+    protected $table            = 'medidas';
+    protected $returnType       = 'App\Entities\Medida';
     protected $useSoftDeletes   = true;
-    protected $allowedFields    = ['nome','slug','ativo','preco','descricao'];
+    protected $allowedFields    = ['nome','ativo','descricao'];
 
     // Dates
     protected $useTimestamps = true;
@@ -20,29 +20,16 @@ class ExtraModel extends Model
 
     // Validation
     protected $validationRules = [
-        'nome'     => 'required|max_length[120]|min_length[2]|is_unique[extras.nome]',
+        'nome'     => 'required|max_length[120]|min_length[2]|is_unique[medidas.nome]',
     ];
     protected $validationMessages = [
         'nome' => [
             'required' => 'O campo Nome é Obrigatório.',
-            'is_unique' => 'Esse extra já Existe.',
+            'is_unique' => 'Essa Medida já Existe.',
         ],
     ];
-    //Eventos Callback
-    protected $beforeInsert = ['criaSlug'];
-    protected $beforeUpdate = ['criaSlug'];
 
-    protected function criaSlug(array $data){
 
-        if(isset($data['data']['nome'])){
-
-            $data['data']['slug'] = mb_url_title($data['data']['nome'], '-',TRUE);
-
-        }
-
-        return $data;
-    }
-    
     public function procurar($term) {
         if($term === null){
             return [];
@@ -62,3 +49,4 @@ class ExtraModel extends Model
     }
 
 }
+

@@ -19,9 +19,9 @@
 
 <?php echo $this->section('conteudo'); ?>
 <div class="row">
-    <div class="col-lg-6 grid-margin stretch-card">
+    <div class="col-lg-8 grid-margin stretch-card">
         <div class="card">
-            <div class="card-header bg-primary pb-0 pt-4">
+            <div class="card-header bg-secondary pb-0 pt-4">
                 <h4 class="card-title text-white"><?php echo esc($titulo); ?></h4>
             </div>
 
@@ -37,18 +37,12 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/extras/excluir/$extra->id");?>
+            <?php echo form_open("admin/extras/cadastrar");?>
 
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Atenção!</strong> Tem certeza da exclusão do extra <strong><?php echo esc ($extra->nome)?>?</strong>
-            </div>
+                
+                <?php echo $this->include('Admin/Extras/form'); ?>
 
-            <button type="submit" class="btn btn-danger mr-2 btn-sm">
-                <i class="mdi mdi-delete btn-icon-prepend"></i>
-                 Excluir
-            </button>
-
-                <a href= "<?php echo site_url("admin/extras/show/$extra->id"); ?>"class="btn btn-light text-dark btn-sm">
+                <a href= "<?php echo site_url("admin/extras"); ?>"class="btn btn-light text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar
                 </a>
