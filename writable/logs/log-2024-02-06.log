@@ -1,0 +1,830 @@
+INFO - 2024-02-06 08:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:17 --> CSRF token verified.
+INFO - 2024-02-06 08:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:22 --> CSRF token verified.
+INFO - 2024-02-06 08:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:30 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 75
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(75): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:30 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 75
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(75): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:30 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 75
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(75): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 75
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(75): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 75
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(75): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 75
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(75): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:56:33 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 66.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:56:37 --> CSRF token verified.
+INFO - 2024-02-06 08:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:58:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:58:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:58:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:58:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:58:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:58:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 52
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(52): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:58:59 --> CSRF token verified.
+INFO - 2024-02-06 08:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 08:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:58:59 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 113
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(113): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:58:59 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 113
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(113): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:59:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 113
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(113): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:59:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 113
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(113): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:59:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 113
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(113): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 08:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 08:59:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 113
+in APPPATH\Controllers\Admin\Medidas.php on line 104.
+ 1 APPPATH\Controllers\Admin\Medidas.php(113): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 09:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 09:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 09:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 09:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 09:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 09:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 09:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 09:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 09:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:30 --> CSRF token verified.
+INFO - 2024-02-06 10:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:54 --> CSRF token verified.
+INFO - 2024-02-06 10:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:03:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:03:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:03:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:03:55 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:03:56 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:03:56 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:00 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:01 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:04 --> CSRF token verified.
+INFO - 2024-02-06 10:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:04 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:04 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:05 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 90
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(90): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->editar('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:06 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:06 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:07 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:07 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:07 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:04:07 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 151
+in APPPATH\Controllers\Admin\Medidas.php on line 142.
+ 1 APPPATH\Controllers\Admin\Medidas.php(151): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:44 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:44 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:44 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:44 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:44 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:44 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:45 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:46 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:46 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:46 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:46 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:20:46 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:20:47 --> CSRF token verified.
+INFO - 2024-02-06 10:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:30 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:30 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:30 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:31 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:32 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 143
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(143): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->excluir('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:33 --> CSRF token verified.
+INFO - 2024-02-06 10:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:35 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:35 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:36 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:36 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:36 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:36 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:37 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo_itaipu.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:37 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'logo-mini.png')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:37 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face4.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:38 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:38 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 10:21:38 --> Argument 1 passed to App\Controllers\Admin\Medidas::buscaMedidaOu404() must be of the type int or null, string given, called in C:\xampp\htdocs\itaipu\app\Controllers\Admin\Medidas.php on line 192
+in APPPATH\Controllers\Admin\Medidas.php on line 183.
+ 1 APPPATH\Controllers\Admin\Medidas.php(192): App\Controllers\Admin\Medidas->buscaMedidaOu404('images')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Medidas->show('images', 'faces', 'face5.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Medidas))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\itaipu\\public\\index.php')
+INFO - 2024-02-06 10:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 10:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

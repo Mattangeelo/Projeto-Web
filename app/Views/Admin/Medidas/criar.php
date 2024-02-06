@@ -37,12 +37,12 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/extras/cadastrar");?>
+            <?php echo form_open("admin/medidas/cadastrar");?>
 
                 
-                <?php echo $this->include('Admin/Extras/form'); ?>
+                <?php echo $this->include('Admin/Medidas/form'); ?>
 
-                <a href= "<?php echo site_url("admin/extras"); ?>"class="btn btn-light text-dark btn-sm">
+                <a href= "<?php echo site_url("admin/medidas"); ?>"class="btn btn-light text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar
                 </a>
