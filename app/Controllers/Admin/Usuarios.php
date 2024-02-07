@@ -94,7 +94,7 @@ class Usuarios extends BaseController
        
         $data= [
 
-            'titulo' => "Detalhando o usuario $usuario->nome",
+            'titulo' => "$usuario->nome",
             'usuario' => $usuario,
         ];
         return view('Admin/Usuarios/show',$data);
@@ -111,7 +111,7 @@ class Usuarios extends BaseController
        
         $data= [
 
-            'titulo' => "Editando o usuario $usuario->nome",
+            'titulo' => "$usuario->nome",
             'usuario' => $usuario,
         ];
         return view('Admin/Usuarios/editar',$data);

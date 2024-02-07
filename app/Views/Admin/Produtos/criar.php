@@ -37,11 +37,12 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/usuarios/atualizar/$usuario->id");?>
+            <?php echo form_open("admin/extras/cadastrar");?>
 
                 
-                <?php echo $this->include('Admin/Usuarios/form'); ?>
-                <a href= "<?php echo site_url("admin/usuarios/show/$usuario->id"); ?>"class="btn btn-light text-dark btn-sm">
+                <?php echo $this->include('Admin/Extras/form'); ?>
+
+                <a href= "<?php echo site_url("admin/extras"); ?>"class="btn btn-light text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar
                 </a>
