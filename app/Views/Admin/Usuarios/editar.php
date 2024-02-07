@@ -21,7 +21,7 @@
 <div class="row">
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
-            <div class="card-header bg-primary pb-0 pt-4">
+            <div class="card-header bg-secondary pb-0 pt-4">
                 <h4 class="card-title text-white"><?php echo esc($titulo); ?></h4>
             </div>
 

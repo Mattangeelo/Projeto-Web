@@ -26,6 +26,7 @@ class Medidas extends BaseController
 
         return view('Admin/Medidas/index',$data);
     }
+
     public function procurar(){
 
         if(!$this->request->isAJAX()){

@@ -176,7 +176,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('admin/categorias'); ?>">
-              <i class="mdi mdi-food menu-icon"></i>
+              <i class="mdi mdi-food-variant menu-icon"></i>
               <span class="menu-title">Categorias</span>
             </a>
           </li>
@@ -190,6 +190,12 @@
             <a class="nav-link" href="<?php echo site_url('admin/medidas'); ?>">
               <i class="mdi mdi-silverware menu-icon"></i>
               <span class="menu-title">Medidas</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('admin/produtos'); ?>">
+              <i class="mdi mdi-food menu-icon"></i>
+              <span class="menu-title">Produtos</span>
             </a>
           </li>
           <li class="nav-item">
