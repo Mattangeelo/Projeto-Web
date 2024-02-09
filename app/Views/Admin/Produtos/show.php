@@ -19,13 +19,31 @@
 
 <?php echo $this->section('conteudo'); ?>
 <div class="row">
-    <div class="col-lg-6 grid-margin stretch-card">
+    <div class="col-lg-3 grid-margin stretch-card">
         <div class="card">
             <div class="card-header bg-secondary pb-0 pt-4">
                 <h4 class="card-title text-white"><?php echo esc($titulo); ?></h4>
             </div>
 
             <div class="card-body">
+
+                <div class="text-center">
+                    <?php if($produto->imagem): ?>
+                        <img class="card-img-top w-75" src="..." alt="Card image cap">
+
+                    <?php else:?>
+                        <img class="card-img-top w-75" src="<?php echo site_url('admin/images/produto-sem-imagem.jpg') ?>" alt="Produto sem imagem">
+
+                    <?php endif?>
+
+                </div>
+
+                <a href= "<?php echo site_url("admin/produtos/editarimagem/$produto->id"); ?>"class="btn btn-outline-info mb-2 btn-sm btn-icon-text">
+                        <i class="mdi mdi-upload btn-icon-prepend"></i>
+                        Upload
+                </a>
+
+                <hr>
                 
                 <p class="card-text">
                     <span class= "font-weight-bold"> Nome:</span>

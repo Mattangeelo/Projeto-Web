@@ -33,6 +33,45 @@ class Produtos extends BaseController
         return view('Admin/Produtos/index',$data);
     }
 
+    public function criar(){
+
+        $produto = new Produto();
+
+        $data= [
+
+            'titulo' => "$produto->nome",
+            'produto' => $produto,
+            'categorias' => $this->categoriaModel->where('ativo',true)->findAll(),
+        ];
+        return view('Admin/Produtos/criar',$data);
+    }
+
+    public function cadastrar (){
+
+        if($this->request->getPost()){
+
+            $produto = new Produto($this->request->getPost());
+
+
+            if($this->produtoModel->save($produto)){
+
+                return redirect()->to(site_url("admin/produtos/show/".$this->produtoModel->getInsertID()))
+                    ->with('sucesso',"produto $produto->nome cadastrado com Sucesso.");
+            }else{
+
+                return redirect()->back()
+                    ->with('errors_model', $this->produtoModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+            }
+
+        }else{
+            /* Não e post */
+            return redirect()->back();
+        }
+
+    }
+
     public function procurar(){
 
         if(!$this->request->isAJAX()){
@@ -77,6 +116,81 @@ class Produtos extends BaseController
             'categorias' => $this->categoriaModel->where('ativo',true)->findAll(),
         ];
         return view('Admin/Produtos/editar',$data);
+    }
+
+    public function atualizar ($id = null){
+
+        if($this->request->getMethod() === 'post'){
+
+            $produto=$this->buscaProdutoOu404($id);
+
+            if($produto->deletado_em != null){
+                return redirect()->back()->with('info',"O produto $produto->nome encontra-se excluído. Portanto, não é possível editá-lo.");
+            }
+            
+
+            $produto->fill($this->request->getPost());
+
+            if(!$produto->hasChanged()){
+
+                return redirect()->back()->with('info','Não há dados para atualizar');
+            }
+
+            if($this->produtoModel->save($produto)){
+
+                return redirect()->to(site_url("admin/produtos/show/$produto->id"))
+                    ->with('sucesso',"produto $produto->nome atualizada com Sucesso.");
+            }else{
+
+                return redirect()->back()
+                    ->with('errors_model', $this->produtoModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+            }
+
+        }else{
+            /* Não e post */
+            return redirect()->back();
+        }
+
+    }
+
+    public function editarImagem($id=null){
+
+        $produto= $this->buscaProdutoOu404($id);
+
+        $data= [
+
+            'titulo' => "$produto->nome",
+            'produto' => $produto,
+        ];
+
+        return view('Admin/Produtos/editar_imagem',$data);
+    }
+
+    public function upload ($id=null){
+
+        $produto = $this->buscaProdutoOu404($id);
+
+        $imagem = $this->request->getFile('foto_produto');
+
+        if(!$imagem->isValid()){
+
+            $codigoErro = $imagem->getError();
+
+            if($codigoErro == UPLOAD_ERR_NO_FILE){
+
+                return redirect()->back()->with('atencao','Nenhum arquivo foi selecionado');
+
+            }
+        }
+
+        $tamanhoImagem = $imagem->getSizeByUnit('mb');
+
+        if($tamanhoImagem > 2){
+            return redirect()->back()->with('atencao','O arquivo selecionado e muito grande');
+        }
+        dd($imagem);
     }
 
     private function buscaProdutoOu404(int $id=null){

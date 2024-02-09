@@ -19,7 +19,7 @@
 
 <?php echo $this->section('conteudo'); ?>
 <div class="row">
-    <div class="col-lg-8 grid-margin stretch-card">
+    <div class="col-lg-6 grid-margin stretch-card">
         <div class="card">
             <div class="card-header bg-secondary pb-0 pt-4">
                 <h4 class="card-title text-white"><?php echo esc($titulo); ?></h4>
@@ -37,12 +37,24 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/produtos/cadastrar");?>
+            <?php echo form_open_multipart("admin/produtos/upload/$produto->id");?>
 
-                
-                <?php echo $this->include('Admin/Produtos/form'); ?>
+                <div class="form-group mb-5">
+                      <label>Imagem</label>
+                      <input type="file" name="foto_produto" class="file-upload-default">
+                    <div class="input-group col-xs-12">
+                        <input type="text" class="form-control file-upload-info" disabled placeholder="Escolha uma Imagem">
+                        <span class="input-group-append">
+                          <button class="file-upload-browse btn btn-outline-info btn-icon-text" type="button">Upload</button>
+                        </span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary mr-2 btn-sm">
+                    <i class="mdi mdi-checkbox-marked-circle btn-icon-prepend"></i>
+                        Salvar
+                </button>
 
-                <a href= "<?php echo site_url("admin/produtos"); ?>"class="btn btn-light text-dark btn-sm">
+                <a href= "<?php echo site_url("admin/produtos/show/$produto->id"); ?>"class="btn btn-light text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar
                 </a>
@@ -65,5 +77,6 @@
 
 <script src="<?php echo site_url('admin/vendors/mask/jquery.mask.min.js');?>"></script>
 <script src="<?php echo site_url('admin/vendors/mask/app.js');?>"></script>
+<script src="<?php echo site_url('admin/js/file-upload.js');?>"></script>
 
 <?php echo $this->endSection(); ?>
