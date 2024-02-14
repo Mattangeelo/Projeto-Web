@@ -190,7 +190,61 @@ class Produtos extends BaseController
         if($tamanhoImagem > 2){
             return redirect()->back()->with('atencao','O arquivo selecionado e muito grande');
         }
-        dd($imagem);
+
+
+        $tipoImagem = $imagem->getMimeType();
+
+        $tipoImagemLimpo = explode('/',$tipoImagem);
+
+        $tiposPermitidos = [
+            'jpeg','png','webp',
+        ];
+
+        if(!in_array($tipoImagemLimpo[1],$tiposPermitidos)){
+            return redirect()->back()->with('atencao','O arquivo não tem o formato permitido');
+        }
+
+        list($largura,$altura) = getimagesize($imagem->getPathName());
+
+        if($largura < "400" || $altura < "400"){
+            return redirect()->back()->with('atencao','A imagem não pode ser menor que 400 x 400 pixels');
+        }
+
+        /*                                          STORE
+        <----------------------------------------------------------------------------------------------->
+        */
+
+        /*
+            Fazendo store da imagem e recuperando o caminho dela. 
+        */
+        $imagemCaminho = $imagem->store('produtos');
+
+        $imagemCaminho = WRITEPATH . 'uploads/' . $imagemCaminho;
+
+        /* Redimensionando a imagem */
+            service('image')
+                    ->withFile($imagemCaminho)
+                    ->fit(400, 400, 'center')
+                    ->save($imagemCaminho);
+
+        /* recuperando imagem antiga*/
+        $imagemAntiga = $produto->imagem;
+
+
+        /*Atribuindo a nova imagem*/
+        $produto->imagem = $imagem->getName();
+
+        /* Atualizando a imagem do produto */
+        $this->produtoModel->save($produto);
+
+        /*Definindo o Caminho da imagem Antiga*/
+        $caminhoImagem = WRITEPATH . 'uploads/produtos/'.$imagemAntiga;
+
+        if(is_file($caminhoImagem)){
+            unlink($caminhoImagem);
+        }
+
+        return redirect()->to(site_url("admin/produtos/show/$produto->id"))->with('sucesso','Imagem alterada com sucesso');
     }
 
     private function buscaProdutoOu404(int $id=null){
