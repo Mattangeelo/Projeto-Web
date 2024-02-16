@@ -247,6 +247,22 @@ class Produtos extends BaseController
         return redirect()->to(site_url("admin/produtos/show/$produto->id"))->with('sucesso','Imagem alterada com sucesso');
     }
 
+    public function imagem (string $imagem = null){
+        if($imagem){
+            $caminhoImagem = WRITEPATH . 'uploads/produtos/' . $imagem;
+
+            $infoImagem = new \finfo(FILEINFO_MIME);
+
+            $tipoImagem = $infoImagem->file($caminhoImagem);
+
+            header("Content-Type: $tipoImagem");
+            header("Content-Length: ".filesize($caminhoImagem));
+
+            readfile($caminhoImagem);
+
+            exit;
+        }
+    }
     private function buscaProdutoOu404(int $id=null){
         if(!$id || !$produto = $this->produtoModel->select('produtos.*,categorias.nome AS categoria')
                                                    ->join('categorias','categorias.id = produtos.categoria_id')
