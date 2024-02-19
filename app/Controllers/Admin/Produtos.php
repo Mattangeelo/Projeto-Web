@@ -10,11 +10,15 @@ class Produtos extends BaseController
 
     private $produtoModel;
     private $categoriaModel;
+    private $extraModel;
+    private $produtoExtraModel;
 
     public function __construct()
     {
         $this->produtoModel = new \App\Models\ProdutoModel();
         $this->categoriaModel = new \App\Models\CategoriaModel();
+        $this->extraModel = new \App\Models\ExtraModel();
+        $this->produtoExtraModel = new \App\Models\ProdutoExtraModel();
     }
 
 
@@ -263,6 +267,23 @@ class Produtos extends BaseController
             exit;
         }
     }
+
+    public function extras($id=null){
+
+        $produto = $this->buscaprodutoOu404($id);
+
+        $data= [
+
+            'titulo' => "$produto->nome",
+            'produto' => $produto,
+            'extras' => $this->extraModel->where('ativo',true)->findAll(),
+            'produtosExtras' => $this->produtoExtraModel->buscaExtrasDoProduto($produto->id),
+        ];
+
+        dd($data['produtosExtras']);
+        return view('Admin/Produtos/extras',$data);
+    }
+
     private function buscaProdutoOu404(int $id=null){
         if(!$id || !$produto = $this->produtoModel->select('produtos.*,categorias.nome AS categoria')
                                                    ->join('categorias','categorias.id = produtos.categoria_id')

@@ -89,12 +89,17 @@
                         Editar
                     </a>
 
+                    <a href= "<?php echo site_url("admin/produtos/extras/$produto->id"); ?>"class="btn btn-outline-github btn-sm btn-icon-text mr-2 btn-sm">
+                        <i class="mdi mdi-box-cutter btn-icon-prepend"></i>
+                        Extras
+                    </a>
+
                     <a href= "<?php echo site_url("admin/produtos/excluir/$produto->id"); ?>"class="btn btn-danger btn-sm mr-2 btn-sm">
                         <i class="mdi mdi-delete btn-icon-prepend"></i>
                         Excluir
                     </a>
 
-                    <a href= "<?php echo site_url("admin/produtos"); ?>"class="btn btn-light text-dark btn-sm">
+                    <a href= "<?php echo site_url("admin/produtos"); ?>"class="btn btn-light  mt-2 text-dark btn-sm">
                         <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                         Voltar
                     </a>
