@@ -279,8 +279,6 @@ class Produtos extends BaseController
             'extras' => $this->extraModel->where('ativo',true)->findAll(),
             'produtosExtras' => $this->produtoExtraModel->buscaExtrasDoProduto($produto->id),
         ];
-
-        dd($data['produtosExtras']);
         return view('Admin/Produtos/extras',$data);
     }
 
