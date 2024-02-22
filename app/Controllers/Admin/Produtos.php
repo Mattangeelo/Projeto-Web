@@ -277,7 +277,8 @@ class Produtos extends BaseController
             'titulo' => "$produto->nome",
             'produto' => $produto,
             'extras' => $this->extraModel->where('ativo',true)->findAll(),
-            'produtosExtras' => $this->produtoExtraModel->buscaExtrasDoProduto($produto->id),
+            'produtosExtras' => $this->produtoExtraModel->buscaExtrasDoProduto($produto->id,10),
+            'pager' => $this->produtoExtraModel->pager,
         ];
         return view('Admin/Produtos/extras',$data);
     }
