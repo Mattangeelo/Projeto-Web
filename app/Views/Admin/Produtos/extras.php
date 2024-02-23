@@ -37,13 +37,13 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/produto/cadastrarextras/$produto->id");?>
+            <?php echo form_open("admin/produtos/cadastrarExtras/$produto->id");?>
 
                 <div class="form-row">
                         <div class="form-group col-md-6">
                             <label>Escolha um extra do produto (opcional)</label>
                             <select class="form-control js-example-basic-single"  name="extra_id">
-                                <option>Escolha um adicional</option>
+                                <option value="">Escolha um adicional</option>
 
                                 <?php foreach($extras as $extra): ?>
                                     <option value="<?php echo $extra->id ?>"><?php echo esc($extra->nome); ?></option>
@@ -81,15 +81,19 @@
                         <tr>
                           <th>Extra</th>
                           <th>Preço</th>
-                          <th>Remover</th>
+                          <th class="text-center">Remover</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php foreach($produtosExtras as $extraProduto):?>
                         <tr>
                           <td><?php echo esc($extraProduto->extra); ?></td>
-                          <td><?php echo esc(number_format($extraProduto->preco,2)); ?></td>
-                          <td><label class="badge badge-danger">X</label></td>
+                          <td>R$&nbsp;<?php echo esc(number_format($extraProduto->preco,2)); ?></td>
+                            <td class="text-center">
+                                <?php echo form_open("excluirextra/$extraProduto->id"); ?>
+                                <button type="submit" class="btn badge badge-danger">X</button>
+                                <?php echo form_close(); ?>
+                            </td>
                         </tr>
 
                         <?php endforeach; ?>

@@ -283,6 +283,40 @@ class Produtos extends BaseController
         return view('Admin/Produtos/extras',$data);
     }
 
+    public function cadastrarExtras($id = null){
+        if($this->request->getMethod() === 'post'){
+            $produto = $this->buscaProdutoOu404($id);
+            
+            $extraProduto ['extra_id'] = $this->request->getPost('extra_id');
+
+            $extraProduto['produto_id'] = $produto->id;
+
+            $extraExistente = $this->produtoExtraModel
+                            ->where('produto_id',$produto->id)
+                            ->where('extra_id',$extraProduto['extra_id'])
+                            ->first();
+
+            if($extraExistente){
+                return redirect()->back()->with('atencao','Extra ja adicionado');
+            }
+
+            if($this->produtoExtraModel->save($extraProduto)){
+
+                return redirect()->back()
+                    ->with('sucesso',"Extra cadastrado com Sucesso.");
+            }else{
+
+                return redirect()->back()
+                    ->with('errors_model', $this->produtoExtraModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+            }
+
+        }else{
+            return redirect()->back();
+        }
+    }
+
     private function buscaProdutoOu404(int $id=null){
         if(!$id || !$produto = $this->produtoModel->select('produtos.*,categorias.nome AS categoria')
                                                    ->join('categorias','categorias.id = produtos.categoria_id')
