@@ -19,7 +19,7 @@
 
 <?php echo $this->section('conteudo'); ?>
 <div class="row">
-    <div class="col-lg-3 grid-margin stretch-card">
+    <div class="col-lg-4 grid-margin stretch-card">
         <div class="card">
             <div class="card-header bg-secondary pb-0 pt-4">
                 <h4 class="card-title text-white"><?php echo esc($titulo); ?></h4>
@@ -92,6 +92,10 @@
                     <a href= "<?php echo site_url("admin/produtos/extras/$produto->id"); ?>"class="btn btn-outline-github btn-sm btn-icon-text mr-2 btn-sm">
                         <i class="mdi mdi-box-cutter btn-icon-prepend"></i>
                         Extras
+                    </a>
+                    <a href= "<?php echo site_url("admin/produtos/especificacoes/$produto->id"); ?>"class="btn btn-outline-info btn-sm btn-icon-text mr-2 btn-sm">
+                        <i class="mdi mdi-format-align-justify btn-icon-prepend"></i>
+                        Especificações
                     </a>
 
                     <a href= "<?php echo site_url("admin/produtos/excluir/$produto->id"); ?>"class="btn btn-danger btn-sm mr-2 btn-sm">

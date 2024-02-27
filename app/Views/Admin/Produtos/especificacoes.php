@@ -37,16 +37,16 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/produtos/cadastrarExtras/$produto->id");?>
+            <?php echo form_open("admin/produtos/cadastrarespecificacoes/$produto->id");?>
 
                 <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label>Escolha um extra do produto (opcional)</label>
-                            <select class="form-control js-example-basic-single"  name="extra_id">
+                            <label>Escolha um medida do produto (opcional)</label>
+                            <select class="form-control js-example-basic-single"  name="medida_id">
                                 <option value="">Escolha um adicional</option>
 
-                                <?php foreach($extras as $extra): ?>
-                                    <option value="<?php echo $extra->id ?>"><?php echo esc($extra->nome); ?></option>
+                                <?php foreach($medidas as $medida): ?>
+                                    <option value="<?php echo $medida->id ?>"><?php echo esc($medida->nome); ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -68,34 +68,38 @@
             
                 <div class="col-md-12 mt-5">
 
-                    <?php if(empty($produtosExtras)): ?>
-                        <p>Esse produto não tem extras</p>
+                    <?php if(!empty($produtoEspecificacoes)): ?>
+                        <div class="alert alert-warning" role="alert">
+                            <h4 class="alert-heading">Atenção</h4>
+                            <p>Esse produto não tem especificações.Portanto, Não esta pronto para ser vendido!</p>
+                            <hr>
+                            <p class="mb-0">Cadastre uma especificação do produto.</p>
+                        </div>
                     <?php else: ?>
-                        <h4 class="card-title">Extras</h4>
+                        <h4 class="card-title">Especificações</h4>
                     <p class="card-description">
-                        <code>Extras ja adicionados</code>
+                        <code>Especificações ja adicionados</code>
                     </p>
                     <div class="table-responsive">
                     <table class="table table-hover">
                       <thead>
                         <tr>
-                          <th>Extra</th>
+                          <th>Medida</th>
                           <th>Preço</th>
+                          <th>Customizável</th>
                           <th class="text-center">Remover</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <?php foreach($produtosExtras as $extraProduto):?>
+                        <?php foreach($produtoEspecificacoes as $especificacao):?>
                         <tr>
-                          <td><?php echo esc($extraProduto->extra); ?></td>
-                          <td>R$&nbsp;<?php echo esc(number_format($extraProduto->preco,2)); ?></td>
+                            <td><?php echo esc($especificacao->medida); ?></td>
+                            <td>R$&nbsp;<?php echo esc(number_format($especificacao->preco,2)); ?></td>
+                            <td><?php echo ($especificacao->customizavel ? '<label class="badge badge-primary">Sim</label>': '<label class="badge badge-warning">Não</label>') ?></td>
                             <td class="text-center">
-                                <?php echo form_open("admin/produtos/excluirExtra/$extraProduto->id/$extraProduto->produto_id"); ?>
                                 <button type="submit" class="btn badge badge-danger">X</button>
-                                <?php echo form_close(); ?>
                             </td>
                         </tr>
-
                         <?php endforeach; ?>
                         
                       </tbody>
@@ -132,11 +136,11 @@
 <script>
     $(document).ready(function() {
         $('.js-example-basic-single').select2({
-            placeholder:'Digite o nome do extra',
+            placeholder:'Digite o nome do medida',
             allowClear:false,
             "language":{
                 "noResults": function(){
-                    return "Extra não encontrado&nbsp;&nbsp;<a class='btn btn-secondary btn-sm' href='<?php echo site_url('admin/extras/criar'); ?>'>Cadastrar</a>";
+                    return "medida não encontrado&nbsp;&nbsp;<a class='btn btn-secondary btn-sm' href='<?php echo site_url('admin/medidas/criar'); ?>'>Cadastrar</a>";
                 }
             },
             escapeMarkup: function(markup){
