@@ -168,6 +168,10 @@ class Produtos extends BaseController
 
         $produto= $this->buscaProdutoOu404($id);
 
+        if($produto->deletado_em != null){
+            return redirect()->back()->with('info','Não é possível fazer upload de imagem de um produto excluido');
+        }
+
         $data= [
 
             'titulo' => "$produto->nome",
@@ -361,6 +365,115 @@ class Produtos extends BaseController
         return view('Admin/Produtos/especificacoes',$data);
     }
 
+    public function cadastrarEspecificacoes($id = null){
+        if($this->request->getMethod() === 'post'){
+            $produto = $this->buscaProdutoOu404($id);
+
+            $especificacao = $this->request->getPost();
+
+
+            $especificacao['produto_id'] = $produto->id;
+            $especificacao['preco'] = str_replace(",","",$especificacao['preco']);
+
+            $especificacaoExistente = $this->produtoEspecificacaoModel
+                                            ->where('produto_id',$produto->id)
+                                            ->where('medida_id',$especificacao['medida_id'])
+                                            ->first();
+
+            if($especificacaoExistente){
+                return redirect()->back()->with('atencao','Essa especificação ja existe para esse produto');
+            }
+
+            if($this->produtoEspecificacaoModel->save($especificacao)){
+
+                return redirect()->back()
+                    ->with('sucesso',"Especificação cadastrado com Sucesso.");
+            }else{
+
+                return redirect()->back()
+                    ->with('errors_model', $this->produtoEspecificacaoModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+            }
+
+        }else{
+            return redirect()->back();
+        }
+    }
+
+    public function excluirEspecificacao($especificacao_id=null,$produto_id=null){
+
+        $produto = $this->buscaProdutoOu404($produto_id);
+
+        $especificacao = $this->produtoEspecificacaoModel
+                                ->where('id',$especificacao_id)
+                                ->where('produto_id',$produto_id)
+                                ->first();
+        
+        if(!$especificacao){
+            return redirect()->back()->with('atencao','Não encontramos a especificação');
+        }
+
+        if($this->request->getMethod() === 'post'){
+            $this->produtoEspecificacaoModel->delete($especificacao->id);
+
+            return redirect()->to(site_url("admin/produtos/especificacoes/$produto->id"))->with('sucesso','Especificação excluida com sucesso');
+        }
+
+        $data=[
+            'titulo' => 'Exclusão de Especificação',
+            'especificacao' => $especificacao,
+        ];
+
+        return view('Admin/Produtos/excluir_especificacao',$data);
+    }
+
+    public function excluir($id = null){
+        $produto = $this->buscaProdutoOu404($id);
+
+        if($this->request->getMethod() === 'post'){
+
+            $this->produtoModel->delete($id);
+
+            if($produto->imagem){
+                $caminhoImagem = WRITEPATH.'uploads/produtos/'.$produto->imagem;
+                if(is_file($caminhoImagem)){
+                    unlink($caminhoImagem);
+                }
+            }
+
+            $produto->imagem = null;
+
+            $this->produtoModel->save($produto);
+
+            return redirect()->to(site_url("admin/produtos"))->with('sucesso','Produto excluído com sucesso');
+        }
+
+        $data=[
+            'titulo' =>"$produto->nome",
+            'produto' => $produto,
+        ];
+        return view('Admin/Produtos/excluir',$data);
+    }
+
+    public function desfazerexclusao($id=null){
+
+        $produto = $this->buscaProdutoOu404($id);
+        
+        if($produto->deletado_em == null){
+            return redirect()->back()->with('info','Apenas produtos excluidos podem ser recuperada.');
+        }
+
+        if($this->produtoModel->desfazerExclusao($id)){
+            return redirect()->back()->with('sucesso','Exclusão desfeita com Sucesso!');
+        }else{
+            return redirect()->back()
+                    ->with('errors_model', $this->produtoModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+        }
+
+    }
 
     private function buscaProdutoOu404(int $id=null){
         if(!$id || !$produto = $this->produtoModel->select('produtos.*,categorias.nome AS categoria')

@@ -28,7 +28,7 @@
             <div class="card-body">
 
                 <div class="text-center">
-                    <?php if($produto->imagem): ?>
+                    <?php if($produto->imagem && $produto->deletado_em == null): ?>
                         <img class="card-img-top w-75" src="<?php echo site_url("admin/produtos/imagem/$produto->imagem");?>" alt="<?php echo esc($produto->nome); ?>">
 
                     <?php else:?>
@@ -38,12 +38,14 @@
 
                 </div>
 
+              <?php if($produto->deletado_em == null):?>
                 <a href= "<?php echo site_url("admin/produtos/editarimagem/$produto->id"); ?>"class="btn btn-outline-info mt-2 mb-2 btn-sm btn-icon-text">
                         <i class="mdi mdi-upload btn-icon-prepend"></i>
                         Upload
                 </a>
 
                 <hr>
+              <?php endif; ?>
                 
                 <p class="card-text">
                     <span class= "font-weight-bold"> Nome:</span>
@@ -103,7 +105,7 @@
                         Excluir
                     </a>
 
-                    <a href= "<?php echo site_url("admin/produtos"); ?>"class="btn btn-light  mt-2 text-dark btn-sm">
+                    <a href= "<?php echo site_url("admin/produtos"); ?>"class="btn btn-light  m2-2 text-dark btn-sm">
                         <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                         Voltar
                     </a>

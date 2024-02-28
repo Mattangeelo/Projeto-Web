@@ -139,8 +139,11 @@
                             <td><?php echo esc($especificacao->medida); ?></td>
                             <td>R$&nbsp;<?php echo esc(number_format($especificacao->preco,2)); ?></td>
                             <td><?php echo ($especificacao->customizavel ? '<label class="badge badge-primary">Sim</label>': '<label class="badge badge-warning">Não</label>') ?></td>
+
                             <td class="text-center">
-                                <button type="submit" class="btn badge badge-danger">X</button>
+                                <a href= "<?php echo site_url("admin/produtos/excluirespecificacao/$especificacao->id/$especificacao->produto_id"); ?>"class="btn badge badge-danger">
+                                    X
+                                </a>
                             </td>
                         </tr>
                         <?php endforeach; ?>
