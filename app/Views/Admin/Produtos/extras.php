@@ -68,7 +68,7 @@
             
                 <div class="col-md-12 mt-5">
 
-                    <?php if(empty($produtosExtras)): ?>
+                    <?php if(empty($produtoExtras)): ?>
                         <p>Esse produto não tem extras</p>
                     <?php else: ?>
                         <h4 class="card-title">Extras</h4>
@@ -85,7 +85,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <?php foreach($produtosExtras as $extraProduto):?>
+                        <?php foreach($produtoExtras as $extraProduto):?>
                         <tr>
                           <td><?php echo esc($extraProduto->extra); ?></td>
                           <td>R$&nbsp;<?php echo esc(number_format($extraProduto->preco,2)); ?></td>

@@ -11,6 +11,33 @@
 <?php echo $this->section('estilos'); ?>
     <link rel="stylesheet" href="<?php echo site_url('admin/vendors/select2/select2.min.css');?>"/>
 
+<style>
+
+    .select2-container .select2-selection--single{
+        display: block;
+        width: 100%;
+        height: 2.875rem;
+        padding: 0.875 1.375rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #495057;
+        background-color: #ffffff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 2px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rebdered{
+        line-height: 18px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        top: 80%;
+    }
+</style>
+
 <?php echo $this->endSection(); ?>
 
 
@@ -40,24 +67,40 @@
             <?php echo form_open("admin/produtos/cadastrarespecificacoes/$produto->id");?>
 
                 <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label>Escolha um medida do produto (opcional)</label>
+                        <div class="form-group col-md-4">
+                            <label>Escolha um medida do produto</label>
                             <select class="form-control js-example-basic-single"  name="medida_id">
-                                <option value="">Escolha um adicional</option>
+                                <option value="">Escolha</option>
 
                                 <?php foreach($medidas as $medida): ?>
                                     <option value="<?php echo $medida->id ?>"><?php echo esc($medida->nome); ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="preco">Preço</label>
+                            <input type="text" class="money form-control" name="preco" id="preco" value="<?php echo old('preco'); ?>">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Produto customizável</label> <a href="javascrip:void" class="" data-toggle="popover" title="Produto meio a meio" data-content="Exemplo de uso: Pizza metade calabresa e metade de Bacon com queijo">Duvida?</a>
+                            <select class="form-control"  name="customizavel">
+                                <option value="">Escolha</option>
+                                <option value="0">Não</option>
+                                <option value="1">Sim</option>
+                            </select>
+                        </div>
                 </div>
 
-                <button type="submit" class="btn btn-secondary mr-2 btn-sm">
+
+
+                <button type="submit" class="btn btn-secondary mt-4 mr-2 btn-sm">
                     <i class="mdi mdi-checkbox-marked-circle btn-icon-prepend"></i>
                         Inserir
                 </button>
                 
-                <a href= "<?php echo site_url("admin/produtos/show/$produto->id"); ?>"class="btn btn-light text-dark btn-sm">
+                <a href= "<?php echo site_url("admin/produtos/show/$produto->id"); ?>"class="btn btn-light mt-4 text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar
                 </a>
@@ -68,7 +111,7 @@
             
                 <div class="col-md-12 mt-5">
 
-                    <?php if(!empty($produtoEspecificacoes)): ?>
+                    <?php if(empty($produtoEspecificacoes)): ?>
                         <div class="alert alert-warning" role="alert">
                             <h4 class="alert-heading">Atenção</h4>
                             <p>Esse produto não tem especificações.Portanto, Não esta pronto para ser vendido!</p>
@@ -135,6 +178,13 @@
 
 <script>
     $(document).ready(function() {
+
+        $(function () {
+            $('[data-toggle="popover"]').popover({
+                placement: 'top',
+                html: true,
+            })
+        })
         $('.js-example-basic-single').select2({
             placeholder:'Digite o nome do medida',
             allowClear:false,
