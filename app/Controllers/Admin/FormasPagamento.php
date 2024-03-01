@@ -128,6 +128,47 @@ class FormasPagamento extends BaseController
         }
     }
 
+    public function excluir($id=null){
+
+        $formaPagamento = $this->buscaformaPagamentoOu404($id);
+
+        if($formaPagamento->deletado_em != null){
+            return redirect()->back()->with('info',"A forma de pagamento $formaPagamento->nome encontra-se ja excluído.");
+        }
+
+        if ($this->request->getMethod() === 'post') {
+
+            $this->formaPagamentoModel->delete($id);
+            return redirect()->to(site_url('admin/formas'))->with('sucesso',"A forma de pagamento $formaPagamento->nome foi excluida com Sucesso!");
+        }
+       
+        $data= [
+
+            'titulo' => "$formaPagamento->nome",
+            'forma' => $formaPagamento,
+        ];
+        return view('Admin/FormasPagamento/excluir',$data);
+    }
+
+    public function desfazerexclusao($id=null){
+
+        $formaPagamento = $this->buscaformaPagamentoOu404($id);
+        
+        if($formaPagamento->deletado_em == null){
+            return redirect()->back()->with('info','Apenas formas de pagamento já excluidas podem ser recuperada.');
+        }
+
+        if($this->formaPagamentoModel->desfazerExclusao($id)){
+            return redirect()->back()->with('sucesso','Exclusão desfeita com Sucesso!');
+        }else{
+            return redirect()->back()
+                    ->with('errors_model', $this->formaPagamentoModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+        }
+
+    }
+
     private function buscaformaPagamentoOu404(int $id=null){
         if(!$id || !$forma = $this->formaPagamentoModel->withDeleted(true)->where('id',$id)->first()){
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Não encontramos a forma de pagamento $id");

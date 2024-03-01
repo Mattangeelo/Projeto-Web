@@ -201,7 +201,7 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('admin/formas'); ?>">
               <i class="mdi mdi-cart menu-icon"></i>
-              <span class="menu-title">Formas de Pagmento</span>
+              <span class="menu-title">Formas de Pagamento</span>
             </a>
           </li>
           <li class="nav-item">
