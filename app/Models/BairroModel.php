@@ -21,7 +21,6 @@ class BairroModel extends Model
     // Validation
     protected $validationRules = [
         'nome'     => 'required|max_length[120]|min_length[2]|is_unique[bairros.nome]',
-        'cep'     => 'required|exact_length[9]',
         'valor_entrega'     => 'required',
     ];
     protected $validationMessages = [
