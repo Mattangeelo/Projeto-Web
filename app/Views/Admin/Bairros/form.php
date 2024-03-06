@@ -45,7 +45,7 @@
 </div>
 
                     
-<button type="submit" class="btn btn-secondary mr-2 btn-sm">
+<button id="btn-salvar" type="submit" class="btn btn-secondary mr-2 btn-sm">
     <i class="mdi mdi-checkbox-marked-circle btn-icon-prepend"></i>
     Salvar
 </button>

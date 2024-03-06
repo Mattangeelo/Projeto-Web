@@ -47,6 +47,44 @@ class Bairros extends BaseController
         
     }
 
+    public function criar(){
+
+        $bairro = new Bairro();
+
+        $data= [
+
+            'titulo' => "$bairro->nome",
+            'bairro' => $bairro,
+        ];
+        return view('Admin/Bairros/criar',$data);
+    }
+
+    public function cadastrar (){
+
+        if($this->request->getPost()){
+
+            $bairro = new Bairro($this->request->getPost());
+
+
+            if($this->bairroModel->save($bairro)){
+
+                return redirect()->to(site_url("admin/bairros/show/".$this->bairroModel->getInsertID()))
+                    ->with('sucesso',"bairro $bairro->nome cadastrado com Sucesso.");
+            }else{
+
+                return redirect()->back()
+                    ->with('errors_model', $this->bairroModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+            }
+
+        }else{
+            /* Não e post */
+            return redirect()->back();
+        }
+
+    }
+
     public function show($id=null){
 
         $bairro = $this->buscabairroOu404($id);

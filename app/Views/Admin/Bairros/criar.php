@@ -37,12 +37,12 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/categorias/cadastrar");?>
+            <?php echo form_open("admin/bairros/cadastrar");?>
 
                 
-                <?php echo $this->include('Admin/Categorias/form'); ?>
+                <?php echo $this->include('Admin/Bairros/form'); ?>
 
-                <a href= "<?php echo site_url("admin/categorias"); ?>"class="btn btn-light text-dark btn-sm">
+                <a href= "<?php echo site_url("admin/bairros"); ?>"class="btn btn-light text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar
                 </a>
@@ -65,5 +65,49 @@
 
 <script src="<?php echo site_url('admin/vendors/mask/jquery.mask.min.js');?>"></script>
 <script src="<?php echo site_url('admin/vendors/mask/app.js');?>"></script>
+
+<script>
+
+    $("#btn-salvar").prop('disabled',true);
+    $('[name=cep]').focusout(function (){
+         var cep = $(this).val();
+         $.ajax({
+
+            type: 'get',
+            url: '<?php echo site_url('admin/bairros/consultacep'); ?>',
+            dataType:'json',
+            data:{
+                cep:cep
+            },
+            beforeSend:function(){
+                $("#cep").html('Consultando');
+                $('[name=nome]').val('');
+                $('[name=cidade]').val('');
+                $('[name=estado]').val('');
+                $("#btn-salvar").prop('disabled',true);
+            },
+
+            success:function(response){
+                if(!response.erro){
+                    /*Sucesso */
+                    $('[name=nome]').val(response.endereco.bairro);
+                    $('[name=cidade]').val(response.endereco.localidade);
+                    $('[name=estado]').val(response.endereco.uf);
+
+                    $("#btn-salvar").prop('disabled',false);
+                }else{
+                    /**Tem erros de validação,cep não encontrado... */
+                    $("#cep").html(response.erro);
+                }
+            },//fim success
+            error:function(){
+                alert('Não foi possivel consultar o cep. Entre em contato com o suporte técnico')
+                $("#btn-salvar").prop('disabled',true);
+            },
+
+         });
+    });
+
+</script>
 
 <?php echo $this->endSection(); ?>
