@@ -37,10 +37,10 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/categorias/excluir/$categoria->id");?>
+            <?php echo form_open("admin/bairros/excluir/$bairro->id");?>
 
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Atenção!</strong> Tem certeza da exclusão da categoria <strong><?php echo esc ($categoria->nome)?>?</strong>
+                <strong>Atenção!</strong> Tem certeza da exclusão do bairro <strong><?php echo esc ($bairro->nome)?>?</strong>
             </div>
 
             <button type="submit" class="btn btn-danger mr-2 btn-sm">
@@ -48,7 +48,7 @@
                  Excluir
             </button>
 
-                <a href= "<?php echo site_url("admin/categorias/show/$categoria->id"); ?>"class="btn btn-light text-dark btn-sm">
+                <a href= "<?php echo site_url("admin/bairros/show/$bairro->id"); ?>"class="btn btn-light text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar
                 </a>

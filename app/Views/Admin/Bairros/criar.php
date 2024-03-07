@@ -95,6 +95,7 @@
                     $('[name=estado]').val(response.endereco.uf);
 
                     $("#btn-salvar").prop('disabled',false);
+                    $("#cep").html('');
                 }else{
                     /**Tem erros de validação,cep não encontrado... */
                     $("#cep").html(response.erro);

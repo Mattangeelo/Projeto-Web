@@ -1,7 +1,7 @@
 <?php
 if(!function_exists('consultaCep')){
     function consultaCep(string $cep){
-        $urlViaCep = "URL: viacep.com.br/ws/{$cep}/json/";
+        $urlViaCep = "https://viacep.com.br/ws/{$cep}/json/";
 
         /* Abre a conexão */
         $ch = curl_init();

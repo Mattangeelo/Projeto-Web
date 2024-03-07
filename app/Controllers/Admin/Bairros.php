@@ -152,6 +152,47 @@ class Bairros extends BaseController
 
     }
 
+    public function excluir($id=null){
+
+        $bairro = $this->buscabairroOu404($id);
+
+        if($bairro->deletado_em != null){
+            return redirect()->back()->with('info',"O bairro $bairro->nome ja encontra-se ja excluído.");
+        }
+
+        if ($this->request->getMethod() === 'post') {
+
+            $this->bairroModel->delete($id);
+            return redirect()->to(site_url('admin/bairros'))->with('sucesso',"O bairro foi $bairro->nome excluido com Sucesso!");
+        }
+       
+        $data= [
+
+            'titulo' => "$bairro->nome",
+            'bairro' => $bairro,
+        ];
+        return view('Admin/Bairros/excluir',$data);
+    }
+
+    public function desfazerexclusao($id=null){
+
+        $bairro = $this->buscabairroOu404($id);
+        
+        if($bairro->deletado_em == null){
+            return redirect()->back()->with('info','Apenas bairros ja excluidos podem ser recuperada.');
+        }
+
+        if($this->bairroModel->desfazerExclusao($id)){
+            return redirect()->back()->with('sucesso','Exclusão desfeita com Sucesso!');
+        }else{
+            return redirect()->back()
+                    ->with('errors_model', $this->bairroModel->errors())
+                    ->with('atencao','Por favor verifique os erros abaixo')
+                    ->withInput();
+        }
+
+    }
+
     public function consultaCep(){
         if(!$this->request->isAJAX()){
             return redirect()->to(site_url());
@@ -165,9 +206,24 @@ class Bairros extends BaseController
             $retorno['erro'] = '<span class = "text-danger small">'. $validacao->getError() .'</span>';
             return $this->response->setJSON($retorno);
         }
-        echo'<pre>';
-        print_r($this->request->getGet());
-        die;
+
+        /**Cep Formatado para ir ao webservice */
+        $cep = str_replace('-','',$this->request->getGet('cep'));
+
+        /**Carregando o Helper  */
+        helper('consulta_cep');
+
+        $consulta = consultaCep($cep);
+
+        if(isset($consulta->erro)&& !isset($consulta->cep)){
+            $retorno['erro'] = '<span class = "text-danger small">CEP Inválido</span>';
+            return $this->response->setJSON($retorno);
+        }
+
+        $retorno['endereco'] = $consulta;
+
+        return $this->response->setJSON($retorno);
+       
     }
 
     private function buscabairroOu404(int $id=null){

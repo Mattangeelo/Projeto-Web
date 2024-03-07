@@ -21,6 +21,7 @@ class BairroModel extends Model
     // Validation
     protected $validationRules = [
         'nome'     => 'required|max_length[120]|min_length[2]|is_unique[bairros.nome]',
+        'cidade'  => 'required|equals[Campo Mourão]',
         'valor_entrega'     => 'required',
     ];
     protected $validationMessages = [
@@ -30,6 +31,9 @@ class BairroModel extends Model
         ],
         'valor_entrega' => [
             'required' => 'O campo Valor de entrega é Obrigatório.',
+        ],
+        'cidade' => [
+            'equals' => 'Só pode ser cadastrado Bairros da cidade de Campo Mourão',
         ],
     ];
     //Eventos Callback
