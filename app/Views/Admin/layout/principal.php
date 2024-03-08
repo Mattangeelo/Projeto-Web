@@ -211,6 +211,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('admin/expedientes'); ?>">
+              <i class="mdi mdi-clock menu-icon"></i>
+              <span class="menu-title">Expedientes</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('admin/entregadores'); ?>">
               <i class="mdi mdi-car menu-icon"></i>
               <span class="menu-title">Entregadores</span>
