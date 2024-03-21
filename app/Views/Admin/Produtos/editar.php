@@ -37,11 +37,11 @@
             
             <?php endif; ?>
                 
-            <?php echo form_open("admin/produto/atualizar/$produto->id");?>
+            <?php echo form_open("admin/produtos/atualizar/$produto->id");?>
 
                 
                 <?php echo $this->include('Admin/Produtos/form'); ?>
-                <a href= "<?php echo site_url("admin/produto/show/$produto->id"); ?>"class="btn btn-light text-dark btn-sm">
+                <a href= "<?php echo site_url("admin/produtos/show/$produto->id"); ?>"class="btn btn-light text-dark btn-sm">
                     <i class="mdi mdi mdi-keyboard-return btn-icon-prepend"></i>
                          Voltar
                 </a>

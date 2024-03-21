@@ -43,6 +43,7 @@
                         <thead>
                             <tr>
                                 <th>Nome</th>
+                                <th>Especificação</th>
                                 <th>Data de criação</th>
                                 <th>Categoria</th>
                                 <th>Ativo</th>
@@ -55,6 +56,17 @@
                                 
                                 <td>
                                     <a href="<?php echo site_url("admin/produtos/show/$produto->id"); ?>"><?php echo $produto->nome; ?></a>
+                                </td>
+                                <td>
+                                    <?php foreach($especificacoes as $especificacao): ?>
+                                        <?php if($produto->id == $especificacao->produto_id): ?>
+                                            <p>
+                                                <?php echo esc ($especificacao->nome); ?> : R$&nbsp;<?php echo esc ($especificacao->preco); ?>
+                                            </p>
+                                         
+                                        <?php endif; ?>
+
+                                    <?php endforeach; ?>
                                 </td>
                                 <td><?php echo $produto->criado_em->humanize(); ?></td>
                                 <td><?php echo $produto->categoria; ?></td>

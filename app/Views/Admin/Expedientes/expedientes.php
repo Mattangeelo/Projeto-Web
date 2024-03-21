@@ -23,7 +23,7 @@
                     </ul>
 
                 <?php endif; ?>
-                <?php echo form_open("admin/expediente",['class' => 'form-row']); ?>
+                <?php echo form_open("admin/expedientes/expedientes",['class' => 'form-row']); ?>
                     <div class="table-responsive">
                     <table class="table table-hover">
                         <thead>
@@ -52,8 +52,8 @@
 
                                     <td class = "form-group col-md-3">
                                         <select class="form-control" name="situacao[]" required="">
-                                            <option value="1">Aberto</option>
-                                            <option value="0">Fechado</option>
+                                            <option value="1" <?php echo ($dia->situacao ? 'selected': ''); ?>>Aberto</option>
+                                            <option value="0" <?php echo (!$dia->situacao ? 'selected': ''); ?>>Fechado</option>
                                         </select>
                                     </td>
                                
@@ -61,16 +61,16 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-secondary mb-3  btn-sm">
+                            <i class="mdi mdi-checkbox-marked-circle btn-icon-prepend"></i>
+                            Salvar
+                        </button>
+                    </div>
                 
                 <?php echo form_close(); ?>
                 
             </div>
-        </div>
-        <div class="col-md-12">
-            <button type="submit" class="btn btn-secondary mb-3  btn-sm">
-                <i class="mdi mdi-checkbox-marked-circle btn-icon-prepend"></i>
-                 Salvar
-                </button>
         </div>
     </div>
 
