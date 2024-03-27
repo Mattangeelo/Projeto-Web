@@ -86,16 +86,16 @@
 
 
                 <?php if($produto->deletado_em == null): ?>
-                    <a href= "<?php echo site_url("admin/produtos/editar/$produto->id"); ?>"class="btn btn-dark btn-sm btn-icon-text mr-2 btn-sm">
+                    <a href= "<?php echo site_url("admin/produtos/editar/$produto->id"); ?>"class="btn btn-dark btn-sm btn-icon-text mr-2 mb-2 btn-sm">
                         <i class="mdi mdi-file-check btn-icon-prepend"></i>
                         Editar
                     </a>
 
-                    <a href= "<?php echo site_url("admin/produtos/extras/$produto->id"); ?>"class="btn btn-outline-github btn-sm btn-icon-text mr-2 btn-sm">
+                    <a href= "<?php echo site_url("admin/produtos/extras/$produto->id"); ?>"class="btn btn-outline-github btn-sm btn-icon-text mr-2 mb-2 btn-sm">
                         <i class="mdi mdi-box-cutter btn-icon-prepend"></i>
                         Extras
                     </a>
-                    <a href= "<?php echo site_url("admin/produtos/especificacoes/$produto->id"); ?>"class="btn btn-outline-info btn-sm btn-icon-text mr-2 btn-sm">
+                    <a href= "<?php echo site_url("admin/produtos/especificacoes/$produto->id"); ?>"class="btn btn-outline-info btn-sm btn-icon-text mr-2 mb-2 btn-sm">
                         <i class="mdi mdi-format-align-justify btn-icon-prepend"></i>
                         Especificações
                     </a>

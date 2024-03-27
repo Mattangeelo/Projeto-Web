@@ -260,7 +260,7 @@
         </header>
         <!-- End header -->
 
-        <?php $this->renderSection('content'); ?>
+        <?php $this->renderSection('conteudo'); ?>
         <!--  Begin Footer  -->
         <footer id="footer">
 
@@ -455,6 +455,8 @@
     <script src="<?php echo site_url('web/'); ?>src/assets/js/loadMoreResults.js"></script>
     <script src="<?php echo site_url('web/'); ?>src/assets/js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcg5Y2D1fpGI12T8wcbtPIsyGdw-_NV1Y&amp;callback=myMap"></script>
+
+    <?php echo $this->renderSection('scripts') ?>
 
 </body>
 
