@@ -10,7 +10,7 @@ class Produto extends BaseController
 
     public function __construct()
     {
-        $produtoModel = new \App\Models\ProdutoModel();
+        $this->produtoModel = new \App\Models\ProdutoModel();
     }
 
     public function detalhes(string $produto_slug = null){
