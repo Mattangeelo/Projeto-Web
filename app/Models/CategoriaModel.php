@@ -20,7 +20,7 @@ class CategoriaModel extends Model
 
     // Validation
     protected $validationRules = [
-        'nome'     => 'required|max_length[120]|min_length[2]|is_unique[categorias.nome]',
+        'nome'     => 'required|max_length[120]|min_length[2]|is_unique[categorias.nome,id,{id}]',
     ];
     protected $validationMessages = [
         'nome' => [
@@ -59,5 +59,12 @@ class CategoriaModel extends Model
         return $this->protect(false)->where('id',$id)
                                     ->set('deletado_em',null)
                                     ->update();
+    }
+
+    public function BuscaCategoriasWebHome(){
+        return $this->select('categorias.id,categorias.nome,categorias.slug')
+                    ->join('produtos','produtos.categoria_id = categorias.id')
+                    ->groupBy('categorias.id')
+                    ->findAll();
     }
 }
