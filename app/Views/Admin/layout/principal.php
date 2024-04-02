@@ -16,7 +16,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="<?php echo site_url('admin/');?>css/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="<?php echo site_url('admin/');?>images/favicon.png" />
+  <link rel="shortcut icon" href="<?php echo site_url('admin/');?>images/logoPizzaSem.png" />
 
   <!--Renderização -->
   <?php echo $this->renderSection('estilos') ?>
@@ -27,8 +27,8 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-          <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo_itaipu.png" alt="logo" width="200" height="100"/></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.png" alt="logo"/></a>
+          <a class="navbar-brand brand-logo" href="index.html"><img src="images/logoPizza.jpg" alt="logo" width="200" height="100"/></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logoPizzaSem.png" alt="logo"/></a>
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-sort-variant"></span>
           </button>

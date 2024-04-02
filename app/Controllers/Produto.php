@@ -7,20 +7,31 @@ use App\Controllers\BaseController;
 class Produto extends BaseController
 {
     private $produtoModel;
+    private $produtoEspecificacaoModel;
+    private $produtoExtraModel;
 
     public function __construct()
     {
         $this->produtoModel = new \App\Models\ProdutoModel();
+        $this->produtoEspecificacaoModel = new \App\Models\ProdutoEspecificacaoModel();
+        $this->produtoExtraModel = new \App\Models\ProdutoExtraModel();
     }
 
     public function detalhes(string $produto_slug = null){
-        if(!$produto_slug ||!$produto = $this->produtoModel->where('slug',$produto_slug)->first()){
+        if(!$produto_slug || !$produto = $this->produtoModel->where('slug',$produto_slug)->first()){
             return redirect()->to(site_url('/'));
         }
         $data = [
             'titulo' => "$produto->nome",
             'produto' => $produto,
+            'especificacoes' => $this->produtoEspecificacaoModel->buscaEspecificacaoDoProdutoDetalhes($produto->id),
         ];
+
+        $extras = $this->produtoExtraModel->buscaExtrasDoProdutoDetalhes($produto->id);
+
+        if($extras){
+            $data['extras'] = $extras;
+        }
         return view('Produto/detalhes',$data);
     }
     
