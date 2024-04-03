@@ -29,8 +29,20 @@
                     
                 </div>
             </div>
+            
             <?php echo form_open("carrinho/adicionar"); ?>
             <div class="col-md-7 col-md-offset-1 col-sm-12 col-xs-12">
+
+                <?php if(session()->has('errors_model')): ?>
+
+                    <ul style="margin-left: -1.6em !important; list-style:decimal">
+                        <?php foreach(session('errors_model') as $error): ?>
+                        <li class="text-danger"><?php echo $error ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                <?php endif; ?>
+
                 <h2 class="name">
                     <?php echo esc($produto->nome) ?>
                 </h2>
@@ -59,7 +71,7 @@
                         <?php foreach($extras as $extra): ?>
                         <div class="radio">
                             <label style="font-size: 16px;">
-                                <input type="radio" class="extra" data-extra="<?php echo $extra->id_principal; ?>" name="extra" value="<?php echo $extra->preco; ?>">
+                                <input type="radio" class="extra" data-extra="<?php echo $extra->id; ?>" name="extra" value="<?php echo $extra->preco; ?>">
                                 <?php echo esc($extra->nome); ?>
                                 R$&nbsp;<?php echo esc(number_format($extra->preco,2)); ?>
                             </label>
@@ -98,7 +110,7 @@
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <input id="btn-adiciona" type="submit" class="btn btn-success btn-block" value="Adicionar ao Carrinho">
+                        <input id="btn-adiciona" type="submit" class="btn btn-success btn-block" value="Adicionar">
                     </div>
                     <?php foreach ($especificacoes as $especificacao): ?>
                         <?php if($especificacao->customizavel): ?>
@@ -139,7 +151,7 @@
             especificacao_id = $(this).attr('data-especificacao');
             $("#especificacao_id").val(especificacao_id);
             $("#btn-adiciona").prop("disabled",false);
-            $("#btn-adiciona").prop("value","Adicionar ao carrinho");
+            $("#btn-adiciona").prop("value","Adicionar");
         });
         $(".extra").on('click',function(){
             var extra_id = $(this).attr('data-extra');
