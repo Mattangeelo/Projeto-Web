@@ -23,7 +23,7 @@
 </div>
 <div class="form-group col-md-12">
         <label for="ingredientes">Ingredientes</label>
-        <textarea class="form-control" name="ingredientes" rows="3" id="ingredientes"><?php echo old('ingredientes', esc($produto->ingredientes)); ?></textarea>
+        <textarea class="form-control" name="ingredientes" rows="4" id="ingredientes"><?php echo old('ingredientes', esc($produto->ingredientes)); ?></textarea>
 </div>
 
 <div class="form-check form-check-flat form-check-primary mb-4">

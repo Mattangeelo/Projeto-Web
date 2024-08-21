@@ -34,6 +34,24 @@ class Produto extends BaseController
         }
         return view('Produto/detalhes',$data);
     }
+
+    public function customizar(string $produto_slug =  null){
+
+        if(!$produto_slug || !$produto=$this->produtoModel->where('slug',$produto_slug)->where('ativo',true)->first()){
+            return redirect()->back();
+        }
+        if(!$this->produtoEspecificacaoModel->where('produto_id',$produto->id)->where('customizavel',true)->first()){
+            return redirect()->back()->with('info','Esse produto não pode ser customizado');
+        }
+        $data = [
+            'titulo' => "Customizaçã do produto $produto->nome",
+            'produto' => $produto,
+            'especificacoes' => $this->produtoEspecificacaoModel->buscaEspecificacaoDoProdutoDetalhes($produto->id),
+            'opcoes' => $this->produtoModel->exibeOpcoesParaCustomizar($produto->categoria_id)
+        ];
+        return view('Produtos/customizar',$data);
+        
+    }
     
     public function imagem(string $imagem = null){
         if($imagem){

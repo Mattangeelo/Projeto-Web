@@ -102,10 +102,10 @@
 
                 <div>
                     <!-- Campos Hidden que usaremos no controller -->
-                    <input type="text" name="produto[slug]" placeholder="produto[slug]" value="<?php echo $produto->slug; ?>">
+                    <input type="hidden" name="produto[slug]" placeholder="produto[slug]" value="<?php echo $produto->slug; ?>">
 
-                    <input type="text" id="especificacao_id"  placeholder="produto[especificacao_id]" name="produto[especificacao_id]">
-                    <input type="text" id="extra_id" placeholder="produto[extra_id]" name="produto[extra_id]">                    
+                    <input type="hidden" id="especificacao_id"  placeholder="produto[especificacao_id]" name="produto[especificacao_id]">
+                    <input type="hidden" id="extra_id" placeholder="produto[extra_id]" name="produto[extra_id]">                    
                 </div>
 
                 <div class="row">

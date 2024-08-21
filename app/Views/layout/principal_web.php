@@ -263,13 +263,13 @@
         <div class="container" style="margin-top: 2em">
         <?php if(session()->has('sucesso')): ?>
 
-            <div class = "alert alert-danger" role="alert"><?php echo session('sucesso'); ?></div>
+            <div class = "alert alert-success" role="alert"><?php echo session('sucesso'); ?></div>
 
         <?php endif; ?>
 
         <?php if(session()->has('info')): ?>
 
-            <div class = "alert alert-danger" role="alert"><?php echo session('info'); ?></div>
+            <div class = "alert alert-warning" role="alert"><?php echo session('info'); ?></div>
 
         <?php endif; ?>
 

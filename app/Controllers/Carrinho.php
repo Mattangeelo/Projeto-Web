@@ -10,12 +10,14 @@ class Carrinho extends BaseController
     private $produtoEspecificacaoModel;
     private $extraModel;
     private $produtoModel;
+    private $acao;
     public function __construct()
     {   
         $this->validacao = service('validation');
         $this->produtoEspecificacaoModel = new \App\Models\ProdutoEspecificacaoModel();
         $this->extraModel = new \App\Models\ExtraModel();
         $this->produtoModel = new \App\Models\ProdutoModel();
+        $this->acao = service('router')->methodName();
     }
     public function index()
     {
@@ -79,10 +81,51 @@ class Carrinho extends BaseController
             $produto ['quantidade'] = (int) $produtoPost['quantidade'];
             $produto['tamanho'] = $especificacaoProduto->nome;
 
-            dd($produto);
+            unset($produto['ativo']);
+
+            if(session()->has('carrinho')){
+                /**Existe um carrinho de compras */
+                $produtos = session()->get('carrinho');
+                
+                $produtosSlugs = array_column($produtos,'slug');
+
+                if(in_array($produto['slug'],$produtosSlugs)){
+                    /** Ja existe o produto no carrinho, incrementamos a quantidade */
+                    $produtos = $this->atualizaProduto($this->acao,$produto['slug'],$produto['quantidade'],$produtos);
+
+                    session()->set('carrinho',$produtos);
+
+                }else{
+                    /** Não existe no carrinho */
+                    /** Push adiciona na sessao carrinho um array com o produto. */
+                    session()->push('carrinho',[$produto]);
+                }
+            }else{  
+                /* Não existe ainda um carrinho de compras na sessão*/
+                $produtos[] = $produto;
+                
+                session()->set('carrinho',$produtos);
+            }
+             return redirect()->back()->with('sucesso','Produto adicionado com sucesso!');
 
         }else{
             return redirect()->back();
         }
+    }
+
+    private function atualizaProduto(string $acao,string $slug,int $quantidade,array $produtos){
+        $produtos = array_map(function($linha) use ($acao,$slug,$quantidade){
+            if($linha['slug'] == $slug){
+                if($acao === 'adicionar'){
+                    $linha['quantidade'] += $quantidade;
+                }
+                if($acao === 'atualizar'){
+                    $linha['quantidade'] = $quantidade;
+                }
+            }
+            return $linha;
+        },$produtos);
+
+        return $produtos;
     }
 }
