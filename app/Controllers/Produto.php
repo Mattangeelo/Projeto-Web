@@ -10,6 +10,7 @@ class Produto extends BaseController
     private $produtoEspecificacaoModel;
     private $produtoExtraModel;
     private $medidaModel;
+    private $extraModel;
 
     public function __construct()
     {
@@ -17,6 +18,7 @@ class Produto extends BaseController
         $this->produtoEspecificacaoModel = new \App\Models\ProdutoEspecificacaoModel();
         $this->produtoExtraModel = new \App\Models\ProdutoExtraModel();
         $this->medidaModel = new \App\Models\MedidaModel();
+        $this->extraModel = new \App\Models\ExtraModel();
     }
 
     public function detalhes(string $produto_slug = null){
@@ -121,6 +123,22 @@ class Produto extends BaseController
 
         return $this->response->setJSON($data);
 
+    }
+    public function exibeValor(){
+        if(!$this->request->isAJAX()){
+            return redirect()->back();
+        }
+        $get = $this->request->getGet();
+
+        $medida = $this->medidaModel->exibeValor($get['medida_id']);
+        if($medida->preco == null){
+            return   $this->response->setJSON([]);
+        }
+        $extra = $this->extraModel->select('preco')->find($get['extra_id']);
+        if($extra != null){
+           $medida->preco = number_format($medida->preco + $extra->preco,2);
+        }
+        return $this->response->setJSON($medida);   
     }
     
     public function imagem(string $imagem = null){

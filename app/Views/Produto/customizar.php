@@ -22,7 +22,7 @@
                 <?php echo form_open('carrinho/especial'); ?>
 
                 <div class="row" style="min-height: 300px !important;">
-                    <div class="col-md-12" style="margin-bottom: 2em">
+                    <div class="col-md-12" style="margin-bottom: 2em;margin-top:1em;">
                         <?php if(session()->has('errors_model')): ?>
                             <ul style="margin-left: -1.6em !important; list-style: decimal;">
                                 <?php foreach(session('errors_model') as $error): ?>
@@ -77,12 +77,12 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div id="valor_produto_customizado">
+                        <div id="valor_produto_customizado" style = "font-size: 18px;color: #990100;font-family:'Montserrat-Bold';">
 
                     </div>
                 </div>
                 <div>
-                    <input type="text" id="extra_id" name="extra_id" placeholder="extra_id_hidden">
+                    <input type="hidden" id="extra_id" name="extra_id" placeholder="extra_id_hidden">
                 </div>
                 <div class="row">
                     <div class="col-sm-3">
@@ -107,6 +107,8 @@
     $(document).ready(function(){
         $("#btn-adiciona").prop("disabled", true);
         $("#btn-adiciona").prop("value","Selecione um Tamanho");
+        $("#segunda_metade").html('<option>Escolha a primeira metade</option>');
+        $("#tamanho").html('<option>Escolha a segunda metade</option>');
 
         $("#primeira_metade").on('change', function() {
 
@@ -114,6 +116,13 @@
             var categoria_id = '<?php echo $produto->categoria_id; ?>';
 
             $("#imagemPrimeiroProduto").html('<img class="img-responsive center-block d-block mx-auto" src="<?php echo site_url("web/src/assets/img/pizza.jpg"); ?>" alt="Escolha o Produto" width="200">');
+            $("#valor_produto_customizado").html('');
+            $("#tamanho").html('<option>Escolha a segunda metade</option>');
+            $("#boxInfoExtras").hide();
+            $("#extra").html('');
+            $("#btn-adiciona").prop("disabled", true);
+            $("#btn-adiciona").prop("value","Selecione um Tamanho");
+
             if(primeira_metade){
                 $.ajax({
                     type:'get',
@@ -155,8 +164,16 @@
             var primeiro_produto_id = $("#primeira_metade").val();
             var segundo_produto_id = $(this).val();
             $("#imagemSegundoProduto").html('<img class="img-responsive center-block d-block mx-auto" src="<?php echo site_url("web/src/assets/img/pizza.jpg"); ?>" alt="Escolha o Produto" width="200">');
+            $("#valor_produto_customizado").html('');
+            $("#tamanho").html('<option>Escolha a segunda metade</option>');
+
             $("#boxInfoExtras").hide();
-            $("#extras").html('');
+            $("#extra").html('');
+
+            $("#btn-adiciona").prop("disabled", true);
+            $("#btn-adiciona").prop("value","Selecione um Tamanho");
+
+
             if(primeiro_produto_id && segundo_produto_id){
                 $.ajax({
                     type:'get',
@@ -165,9 +182,6 @@
                     data:{
                         primeiro_produto_id: primeiro_produto_id,
                         segundo_produto_id: segundo_produto_id,
-                    },
-                    beforeSend: function(data){
-                        
                     },
                     success: function(data){
                         if(data.imagemSegundoProduto){
@@ -190,15 +204,60 @@
                         if(data.extras){
                             $("#boxInfoExtras").show();
                             $(data.extras).each( function(){
-                                var input = "<div class='radio'><label><input type='radio' class='extra' name='extra' data-extra='"+this.id+"' value='"+this.preco+"' >"+this.nome+"</label></div>"
+                                var input = "<div class='radio'><label><input type='radio' class='extra' name='extra' data-extra='"+this.id+"' value='"+this.preco+"' >"+this.nome+" R$ "+this.preco+"</label></div>";
                                 $("#extras").append(input);
                             });
 
                             $(".extra").on('click',function(){
                                 var extra_id = $(this).attr('data-extra');
                                 $("#extra_id").val(extra_id);
+                                var medida_id = $("#tamanho").val();
+                                if($.isNumeric(medida_id)){
+                                    $.ajax({
+                                        type:'get',
+                                        url:'<?php echo site_url('produto/exibevalor'); ?>',
+                                        dataType: 'json',
+                                        data:{
+                                            medida_id: medida_id,
+                                            extra_id:$("#extra_id").val(),
+                                        },
+                                        success: function(data){
+                                            if(data){
+                                                $("#valor_produto_customizado").html('R$ '+ data.preco);
+                                                $("#btn-adiciona").prop("disabled",false);
+                                                $("#btn-adiciona").prop("value","Adicionar ao carrinho");
+                                            }
+                                        },
+                                    });
+                                }
                             });
 
+                        }
+                    },
+                });
+            }
+        });
+
+        $("#tamanho").on('change', function(){
+            $("#btn-adiciona").prop("disabled",true);
+            $("#btn-adiciona").prop("value","Selecione um Tamanho");
+
+            var medida_id = $(this).val();
+            $("#valor_produto_customizado").html('');
+            if(medida_id){
+                $.ajax({
+                    type:'get',
+                    url:'<?php echo site_url('produto/exibevalor'); ?>',
+                    dataType: 'json',
+                    data:{
+                        medida_id: medida_id,
+                        extra_id:$("#extra_id").val(),
+                    },
+                    success: function(data){
+                        if(data.preco){
+                            $("#valor_produto_customizado").html('R$ '+ data.preco);
+                            $("#btn-adiciona").prop("disabled",false);
+                            $("#btn-adiciona").prop("value","Adicionar ao carrinho");
                         }
                     },
                 });
