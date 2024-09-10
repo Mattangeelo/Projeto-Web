@@ -11,31 +11,40 @@ class CreatePedidosTable extends Migration
         // Criação da tabela 'pedidos'
         $this->forge->addField([
             'id' => [
-                'type'           => 'INT',
-                'constraint'     => 11,
-                'unsigned'       => true,
+                'type' => 'INT',
+                'constraint' => 11,
+                'unsigned' => true,
                 'auto_increment' => true,
             ],
             'usuario_id' => [
-                'type'       => 'INT',
+                'type' => 'INT',
                 'constraint' => 11,
-                'unsigned'   => true,
+                'unsigned' => true,
             ],
             'total' => [
-                'type'       => 'DECIMAL',
+                'type' => 'DECIMAL',
                 'constraint' => '10,2',
             ],
+            'slug' => [
+                'type' => 'VARCHAR',
+                'constraint' => '128',
+            ],
             'status' => [
-                'type'       => 'ENUM',
+                'type' => 'ENUM',
                 'constraint' => ['pendente', 'concluido', 'cancelado'],
-                'default'    => 'pendente',
+                'default' => 'pendente',
             ],
             'criado_em' => [
-                'type'    => 'DATETIME',
+                'type' => 'DATETIME',
                 'default' => null,
             ],
             'atualizado_em' => [
-                'type'    => 'DATETIME',
+                'type' => 'DATETIME',
+                'default' => null,
+            ],
+            'deletado_em' => [  // Adicione esta linha para soft deletes
+                'type' => 'DATETIME',
+                'null' => true,
                 'default' => null,
             ],
         ]);

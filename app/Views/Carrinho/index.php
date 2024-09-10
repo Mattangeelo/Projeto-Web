@@ -104,13 +104,37 @@
                         </table>
                         <div class="row">
                             <div class="col-sm-6">
-                                <a href="<?php echo site_url('carrinho/concluir'); ?>" id="btn-concluir"
-                                    class="btn btn-success">
-                                    Concluir Pedido
-                                </a>
+                                <!-- Formulário para enviar o pedido via POST -->
+                                <form action="<?php echo site_url('carrinho/concluir'); ?>" method="post">
+                                    <!-- Para segurança, adicione o token CSRF se ele estiver ativado -->
+                                    <?php echo csrf_field(); ?>
+
+                                    <!-- Passa o total e outros dados importantes para o controller -->
+                                    <input type="hidden" name="total" value="<?php echo number_format($total, 2); ?>">
+
+                                    <!-- Enviar dados dos produtos como array -->
+                                    <?php foreach ($carrinho as $produto): ?>
+                                        <input type="hidden" name="produtos[<?php echo $produto->slug; ?>][nome]"
+                                            value="<?php echo esc($produto->nome); ?>">
+                                        <input type="hidden" name="produtos[<?php echo $produto->slug; ?>][quantidade]"
+                                            value="<?php echo esc($produto->quantidade); ?>">
+                                        <input type="hidden" name="produtos[<?php echo $produto->slug; ?>][preco]"
+                                            value="<?php echo esc($produto->preco); ?>">
+                                        <input type="hidden" name="produtos[<?php echo $produto->slug; ?>][slug]"
+                                            value="<?php echo esc($produto->slug); ?>">
+                                    <?php endforeach; ?>
+
+                                    <!-- Botão para submeter o formulário -->
+                                    <button type="submit" id="btn-concluir" class="btn btn-success">
+                                        Concluir Pedido
+                                    </button>
+                                </form>
+
+                                <!-- Link para voltar à página inicial -->
                                 <a href="<?php echo site_url("/"); ?>" class="btn btn-info ml-2">Voltar</a>
                             </div>
                         </div>
+
 
 
 

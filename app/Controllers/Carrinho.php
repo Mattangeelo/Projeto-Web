@@ -260,31 +260,40 @@ class Carrinho extends BaseController
     public function concluir()
     {
         if ($this->request->getMethod() == 'post') {
-    
-            // Aqui, você precisa processar os dados do pedido, por exemplo, coletar itens do carrinho
-            $carrinho = session()->get('carrinho'); // Supondo que você está usando a sessão para armazenar o carrinho
-    
+
+            // Obtém o carrinho da sessão
+            $carrinho = session()->get('carrinho');
+
             if (empty($carrinho)) {
                 return redirect()->back()->with('erro', 'O carrinho está vazio.');
             }
-    
-            // Calcular o total
+
+            // Calcula o total do pedido
             $total = 0;
             foreach ($carrinho as $produto) {
                 $total += $produto['preco'] * $produto['quantidade'];
             }
-    
+
+            // Obtém o ID do usuário logado
+            $usuario_id = session()->get('usuario_id');
+
+            if (empty($usuario_id)) {
+                return redirect()->back()->with('erro', 'Usuário não identificado.');
+            }
+
+            // Prepara os dados para inserção
             $data = [
                 'usuario_id' => $usuario_id,
-                'total'      => $total,
-                'status'     => 'pendente',
+                'total' => $total,
+                'status' => 'pendente',
+                'slug' => $produto['slug'],
             ];
-            
-            // Salva o pedido
+
+            // Tenta salvar o pedido no banco de dados
             if ($this->pedidosModel->insert($data)) {
-                // Limpa o carrinho após salvar o pedido, se necessário
-                session()->remove('carrinho'); // Descomente se você estiver usando sessões para o carrinho
-    
+                // Limpa o carrinho da sessão após salvar o pedido
+                session()->remove('carrinho');
+
                 return redirect()->to('/')->with('sucesso', 'Seu pedido foi concluído com sucesso!');
             } else {
                 // Adiciona mensagens de erro detalhadas
@@ -295,6 +304,7 @@ class Carrinho extends BaseController
             return redirect()->to('/');
         }
     }
+
 
     private function atualizaProduto(string $acao, string $slug, int $quantidade, array $produtos)
     {
