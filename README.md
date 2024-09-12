@@ -31,3 +31,36 @@ Critérios de Aceitação:
 
 O cliente deve ser capaz de ver uma lista de todos os pedidos anteriores.
 O cliente deve ser capaz de visualizar os detalhes de cada pedido (itens, data, status).
+
+Padrões de Projeto Utilizados
+Active Record
+O padrão de projeto Active Record é utilizado para facilitar a interação com a base de dados. Nesse padrão, cada modelo é responsável por gerenciar suas próprias operações de CRUD (Create, Read, Update, Delete) e validações. O modelo ProdutoModel, por exemplo, representa a tabela produtos e inclui métodos para realizar buscas, inserções e atualizações diretamente na tabela.
+
+Exemplos:
+
+procura($term): Busca produtos com base em um termo.
+desfazerExclusao(int $id): Restaura um produto que foi marcado como excluído.
+php
+public function procura($term) {
+    return $this->select('id, nome')
+                ->like('nome', $term)
+                ->withDeleted(true)
+                ->get()
+                ->getResult();
+}
+Factory Method (Método Fábrica)
+O padrão Factory Method é utilizado para criar objetos com base em um conjunto de dados ou condições específicas. No projeto, o método criaSlug é um exemplo de como o padrão é aplicado. Este método gera e atribui um slug ao nome do produto antes da inserção ou atualização no banco de dados.
+
+Exemplo:
+
+criaSlug(array $data): Cria um slug a partir do nome do produto.
+php
+protected function criaSlug(array $data) {
+    if (isset($data['data']['nome'])) {
+        $data['data']['slug'] = mb_url_title($data['data']['nome'], '-', true);
+    }
+    return $data;
+}
+Esses padrões ajudam a manter o código organizado e a separar a lógica de negócios da lógica de acesso aos dados, promovendo uma arquitetura mais limpa e escalável.
+
+
